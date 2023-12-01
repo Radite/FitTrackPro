@@ -1,7 +1,4 @@
 import sys, res
-import sys, res
-import sys, res
-import sys, res
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'UneditedDashboard4.ui'
@@ -495,60 +492,43 @@ class Ui_MainWindow(object):
 
 
 
+        def showWorkouts(self):
+                # Fetch workout data
+                workout_data = self.uiAddWorkout.fetchWorkouts(self.UserID)
+
+                # Check if there are workouts, if not, show default page
+                if not any(workout_data.values()):
+                        self.stackedWidget_6.setCurrentIndex(0)  # Showing default page with no workouts
+                        return
+
+                # If workouts exist, show them on page 27
+                self.stackedWidget_6.setCurrentIndex(1)
+
+                # Create a new widget with grid layout for workouts
+                workout_widget = QtWidgets.QWidget()
+                workout_layout = QtWidgets.QGridLayout(workout_widget)
+
+                row = 0
+                for category, workouts in workout_data.items():
+                        for workout in workouts:
+                                date, activity, distances, focus = workout
+                                date_label = QtWidgets.QLabel(str(date))
+                                activity_label = QtWidgets.QLabel(activity)
+                                distances_label = QtWidgets.QLabel(distances)
+                                focus_label = QtWidgets.QLabel(focus)
+
+                                workout_layout.addWidget(date_label, row, 0)
+                                workout_layout.addWidget(activity_label, row, 1)
+                                workout_layout.addWidget(distances_label, row, 2)
+                                workout_layout.addWidget(focus_label, row, 3)
+                                row += 1
+
+                        # Add the workout widget to page_27
+                self.page_27.layout().addWidget(workout_widget)
 
 
 
-        self.AddWorkoutButtonTop_5.clicked.connect(self.show_addworkout)
-        #self.loadWorkouts()
-    def show_addworkout(self):
-        from AddWorkoutV2 import ui_AddWorkout
-        self.addWorkoutWindow = QtWidgets.QMainWindow()
-
-        self.addWorkoutUI = ui_AddWorkout()
-        # Pass UserID when setting up the UI
-        self.addWorkoutUI.setupUi(self.addWorkoutWindow, self.UserID)
-        self.addWorkoutWindow.show()
-
-        # Close the main window
-        self.main_window.close()
-        
-
-    def showWorkouts(self):
-        # Fetch workout data
-        workout_data = self.uiAddWorkout.fetchWorkouts(self.UserID)
-
-        # Check if there are workouts, if not, show default page
-        if not any(workout_data.values()):
-                self.stackedWidget_6.setCurrentIndex(0)  # Showing default page with no workouts
-                return
-
-        # If workouts exist, show them on page 27
-        self.stackedWidget_6.setCurrentIndex(1)
-
-        # Create a new widget with grid layout for workouts
-        workout_widget = QtWidgets.QWidget()
-        workout_layout = QtWidgets.QGridLayout(workout_widget)
-
-        row = 0
-        for category, workouts in workout_data.items():
-                for workout in workouts:
-                        date, activity, distances, focus = workout
-                        date_label = QtWidgets.QLabel(str(date))
-                        activity_label = QtWidgets.QLabel(activity)
-                        distances_label = QtWidgets.QLabel(distances)
-                        focus_label = QtWidgets.QLabel(focus)
-
-                        workout_layout.addWidget(date_label, row, 0)
-                        workout_layout.addWidget(activity_label, row, 1)
-                        workout_layout.addWidget(distances_label, row, 2)
-                        workout_layout.addWidget(focus_label, row, 3)
-                        row += 1
-
-                # Add the workout widget to page_27
-        self.page_27.layout().addWidget(workout_widget)
-                        
-
-    def retranslateUi(self, MainWindow):
+        def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.NameLabel.setText(_translate("MainWindow", "TextLabel"))

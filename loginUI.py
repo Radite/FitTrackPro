@@ -14,6 +14,8 @@ import bcrypt
 import webbrowser
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
+
 
 
 class ClickableLabel(QLabel):
@@ -218,8 +220,19 @@ class LoginForm(object):
                 self.pushButton_5.clicked.connect(lambda: self.open_url('https://www.facebook.com/IIAxzd/'))
                 self.pushButton_3.clicked.connect(lambda: self.open_url('https://www.linkedin.com/in/jsmmeghoo-932b8019b/'))
 
+                self.CloseButton = QtWidgets.QToolButton(self.widget)
+                image_path = 'C:\\Users\\Peter\\Downloads\\Download.png'
+                CButton = QIcon(image_path)
+                self.CloseButton.setStyleSheet("QToolButton { border: none; }")
+                self.CloseButton.setIconSize(QtCore.QSize(25, 20))
+                self.CloseButton.setGeometry(QtCore.QRect(290, 35, 25, 19))
+                self.CloseButton.setObjectName("CloseButton")
+                self.CloseButton.setIcon(CButton)
+                self.CloseButton.clicked.connect(lambda: self.Form.close())
+
                 self.retranslateUi(Form)
                 QtCore.QMetaObject.connectSlotsByName(Form)
+                
 
         def validate_password(self,username,input_password):
                 host = "localhost"
@@ -301,6 +314,7 @@ class LoginForm(object):
                 self.ui.setupUi(self.window)
                 self.window.show()
                 self.Form.hide()
+
 
                
 

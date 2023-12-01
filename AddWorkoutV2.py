@@ -1290,17 +1290,6 @@ class ui_AddWorkout(object):
 
                 return data
 
-
-
-
-
-        
-
-                
-
-
-
-
         def on_combobox_changed(self, index):
                 # Change the current page of the stacked widget based on the combo box selection
                 self.stackedWidget.setCurrentIndex(index)
@@ -1312,47 +1301,5 @@ if __name__ == "__main__":
         MainWindow = QtWidgets.QMainWindow()
         ui = ui_AddWorkout()
         ui.setupUi(MainWindow, UserID=1)
-        MainWindow.show()
-        sys.exit(app.exec_())
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = Ui_MainWindow()
-        ui.setupUi(MainWindow)
-        MainWindow.show()
-        sys.exit(app.exec_())
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = Ui_MainWindow()
-        ui.setupUi(MainWindow)
-        MainWindow.show()
-        sys.exit(app.exec_())
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = Ui_MainWindow()
-        ui.setupUi(MainWindow)
-        MainWindow.show()
-        sys.exit(app.exec_())
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = Ui_MainWindow()
-        ui.setupUi(MainWindow)
-        MainWindow.show()
-        sys.exit(app.exec_())
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = Ui_MainWindow()
-        ui.setupUi(MainWindow)
-        MainWindow.show()
-        sys.exit(app.exec_())
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = Ui_MainWindow()
-        ui.setupUi(MainWindow)
         MainWindow.show()
         sys.exit(app.exec_())

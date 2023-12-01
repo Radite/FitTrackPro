@@ -1,0 +1,3476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1113</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="MainWindowWidget">
+   <property name="styleSheet">
+    <string notr="true">layoutLeftMargin</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="LeftMenuWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>310</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+    background-color: #272727; 
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QWidget" name="NameWidget" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>110</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="0" column="1">
+            <widget class="QWidget" name="LeftMenuCredentialsWidget" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLabel" name="LeftMenuNameLabel">
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="LeftMenuEmailLabel">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Email</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QToolButton" name="LeftMenuImage">
+             <property name="styleSheet">
+              <string notr="true">QToolButton { border: none; }</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="SearchWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>75</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLineEdit" name="SearchBar">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>MM/DD/YYYY</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="UpperListWidget" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>200</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QPushButton" name="WorkoutsButton">
+             <property name="styleSheet">
+              <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 10px;
+</string>
+             </property>
+             <property name="text">
+              <string>Workouts</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="StatsButton">
+             <property name="styleSheet">
+              <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 10px;
+</string>
+             </property>
+             <property name="text">
+              <string>Stats/Progression</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GoalsButton">
+             <property name="styleSheet">
+              <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 10px;
+</string>
+             </property>
+             <property name="text">
+              <string>Goals</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="styleSheet">
+              <string notr="true">color: white; 
+</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="LeftMenuSpacerWidget" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>75</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="LowerListWidget" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QPushButton" name="HelpButton">
+             <property name="styleSheet">
+              <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 10px;
+</string>
+             </property>
+             <property name="text">
+              <string>Support/FAQ</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="LogOutButton">
+             <property name="styleSheet">
+              <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 10px;
+</string>
+             </property>
+             <property name="text">
+              <string>Log Out</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QStackedWidget" name="MainStackedWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+    background-color: #1C1C1C; 
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="WorkoutOverviewPage">
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QStackedWidget" name="stackedWidget">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="page">
+            <widget class="QWidget" name="widget_6" native="true">
+             <property name="geometry">
+              <rect>
+               <x>2</x>
+               <y>0</y>
+               <width>811</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_21">
+              <item>
+               <widget class="QWidget" name="widget_5" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_20">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_19">
+                   <item>
+                    <widget class="QPushButton" name="DateScrollLeft_2">
+                     <property name="maximumSize">
+                      <size>
+                       <width>20</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="DateScrollRight_2">
+                     <property name="maximumSize">
+                      <size>
+                       <width>20</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_9" native="true"/>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_8" native="true"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="AddWorkoutButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>+ Add Workout</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_2"/>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="DashboardWidget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <layout class="QFormLayout" name="formLayout_5">
+            <item row="0" column="0">
+             <widget class="QWidget" name="widget" native="true">
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="ActivityLabel">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>MS Shell Dlg 2</family>
+                   <pointsize>6</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Activity</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="AllFilterButton">
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+
+background: transparent;
+text-align: center; /* Align the text inside the QPushButton to the left */
+border-radius: 3px; /* Adjust this value to change the roundness */
+border: 1px solid rgba(105, 118, 132, 255);
+
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>All</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QPushButton" name="TrainingFilterButton">
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+
+background: transparent;
+text-align: center; /* Align the text inside the QPushButton to the left */
+border-radius: 3px; /* Adjust this value to change the roundness */
+border: 1px solid rgba(105, 118, 132, 255);
+
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Training</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QPushButton" name="GymFilterButton">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+
+background: transparent;
+text-align: center; /* Align the text inside the QPushButton to the left */
+border-radius: 3px; /* Adjust this value to change the roundness */
+border: 1px solid rgba(105, 118, 132, 255);
+
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Gym</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QPushButton" name="RaceFilterButton">
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+
+background: transparent;
+text-align: center; /* Align the text inside the QPushButton to the left */
+border-radius: 3px; /* Adjust this value to change the roundness */
+border: 1px solid rgba(105, 118, 132, 255);
+
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Race</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QWidget" name="widget_2" native="true">
+              <layout class="QGridLayout" name="gridLayout_10">
+               <item row="1" column="4">
+                <widget class="QLabel" name="GWorkoutsLabel">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Gym Workouts</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="DurationLabel">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Duration</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="TWorkoutsLabel">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Track Workouts</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="DistanceAmount">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>0.00</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLabel" name="TWorkoutsAmount">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLabel" name="RacesAmount">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="DistanceLabel">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Distance (km)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="DurationAmount">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>0:00.00</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="5">
+                <widget class="QLabel" name="GWorkoutsAmount">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="5">
+                <widget class="QLabel" name="RacesLabel">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Races</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="WorkoutLogWidget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget {
+border-radius: 400px;
+    background-color: #272727; 
+}</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="1">
+             <widget class="QLabel" name="ActivityLabelDash">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white; 
+</string>
+              </property>
+              <property name="text">
+               <string>Activity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLabel" name="FocusLabelDash">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white; 
+</string>
+              </property>
+              <property name="text">
+               <string>Focus</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="DateLabelDash">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white; 
+</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="DistancesLabelDash">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white; 
+</string>
+              </property>
+              <property name="text">
+               <string>Distances</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="4">
+             <widget class="QStackedWidget" name="WorkoutLogStackedWidget">
+              <property name="styleSheet">
+               <string notr="true">QWidget {
+border-radius: 400px;
+    background-color: #000; 
+}</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="WorkoutLogNoWorkoutsPage">
+               <layout class="QGridLayout" name="gridLayout_35">
+                <item row="0" column="0">
+                 <widget class="QWidget" name="NoWorkoutsThisMonthWidget" native="true">
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QPushButton" name="AddWorkoutButtonWidget_5">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>75</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Symbol</family>
+                       <pointsize>32</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color: white; 
+</string>
+                     </property>
+                     <property name="text">
+                      <string>+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="WorkoutsAmountDefaultLabel_5">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color: white; 
+</string>
+                     </property>
+                     <property name="text">
+                      <string>                        You have no workouts for this month.</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="WorkoutLogEmptyPage">
+               <layout class="QVBoxLayout" name="verticalLayout_12"/>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="AddWorkoutPage">
+        <layout class="QGridLayout" name="gridLayout_29">
+         <item row="0" column="0">
+          <widget class="QWidget" name="AddWorkoutDashboard" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QWidget" name="AddWorkoutWidget" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>175</height>
+               </size>
+              </property>
+              <layout class="QFormLayout" name="formLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="WorkoutNameLabel">
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Workout Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QLineEdit" name="WorkoutNameLE">
+                 <property name="maximumSize">
+                  <size>
+                   <width>400</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>MM/DD/YYYY</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="StartTimeLabel">
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Start Time</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="DateLabel">
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Date</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLineEdit" name="StartTimeLE">
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>HH:MM AM/PM</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="DateLE">
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>MM/DD/YYYY</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QWidget" name="ActivityWidget" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="Activitylabel">
+                    <property name="text">
+                     <string>&lt;font color=&quot;white&quot;&gt;Activity &lt;font color=&quot;red&quot;&gt;*&lt;/font&gt;
+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="ActivitycomboBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Training</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Race</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Gym</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QStackedWidget" name="AddWorkoutStackedWidget">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="EmptyPage">
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QWidget" name="EmptyWidget" native="true"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="AddRacePage">
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="1" column="0">
+              <widget class="QWidget" name="widget_4" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QPushButton" name="addRaceRunButton">
+                  <property name="text">
+                   <string>Add another run</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="SaveRaceButton">
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="scrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="AddRacescrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>782</width>
+                  <height>195</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QWidget" name="AddRaceWidget" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="raceEnterDistance">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Distance (m)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="raceEnterTime">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Time</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="raceDistanceLE"/>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="raceTimeLE"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="addTrainingPage">
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="addTrainingscrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="addTrainingscrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>365</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QWidget" name="addTrainingwidget" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_6">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="EnterRunsLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Run(s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="EnterTimesLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Time(s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="EnterIntensityLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Intensity</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="3">
+                     <widget class="QLabel" name="EnterRestLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Rest</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="4">
+                     <widget class="QLabel" name="EnterFocusLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Focus</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="TrainingRunsLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="placeholderText">
+                       <string>6x100m</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="TrainingTimesLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="IntensityLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>70%</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QLineEdit" name="TrainingRestLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>70%</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="4">
+                     <widget class="QLineEdit" name="FocusLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>e.g. Tempo</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item row="1" column="0" rowspan="2">
+              <widget class="QWidget" name="widget_7" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QPushButton" name="AddTrainingRunButton">
+                  <property name="text">
+                   <string>Add another run</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="SaveTrainingButton">
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="addGymPage">
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="addGymscrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="addGymscrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>289</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QWidget" name="addGymwidget" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="0" column="3">
+                     <widget class="QLabel" name="EnterReps">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Reps</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QLineEdit" name="EnterRepsLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>12</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="EnterExercise">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Exercise</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="EnterExerciseLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Bench Press</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="EnterWeightLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>135lbs/60kg</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="EnterWeight">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Weight</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="EnterSets">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Sets</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="EnterSetsLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>3</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QWidget" name="AddExerciseWidget" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QPushButton" name="AddExerciseButton">
+                  <property name="text">
+                   <string>Add Exercise</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="saveExerciseButton">
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="StatsPage">
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <item>
+          <widget class="QWidget" name="StatsTopWidget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>70</height>
+            </size>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="1" column="3">
+             <widget class="QComboBox" name="StatsIntensityComboBox">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="placeholderText">
+               <string>Intensity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="StatsLabel">
+              <property name="styleSheet">
+               <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 10px;
+</string>
+              </property>
+              <property name="text">
+               <string>Stats &amp; Progression</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QComboBox" name="StatsDistanceComboBox">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="placeholderText">
+               <string>Distance</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QPushButton" name="LifetimeStatsButton">
+              <property name="text">
+               <string>PushButton</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="StatsActivityFilter">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="placeholderText">
+               <string>Activity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QComboBox" name="StatsTimeFilter">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="placeholderText">
+               <string>Timeframe</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="DateScrollWidget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <layout class="QGridLayout" name="DateScrollLayout">
+              <item row="0" column="0">
+               <widget class="QPushButton" name="DateScrollLeft">
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="DateScrollLabel">
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="DateScrollRight">
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="ChartWidget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>600</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QGraphicsView" name="ChartView">
+              <property name="maximumSize">
+               <size>
+                <width>530</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="TopPerformancesBox">
+              <property name="title">
+               <string>Top Performances</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_8">
+        <layout class="QVBoxLayout" name="verticalLayout_17">
+         <item>
+          <widget class="QWidget" name="GoalsTopWidget" native="true">
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="0">
+             <widget class="QLabel" name="GoalsTopLabel">
+              <property name="text">
+               <string>ACHIEVE YOUR BEST</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="CreateGoalButton">
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Create Goal</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="GoalsscrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="GoalsScrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>800</width>
+              <height>481</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QWidget" name="GoalsWidget" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QLabel" name="NoActiveGoalsLabel">
+                  <property name="text">
+                   <string>There are no Active Goals</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="CreateGoalPage">
+        <layout class="QVBoxLayout" name="verticalLayout_15">
+         <item>
+          <widget class="QWidget" name="CreateGoalTopWidget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLabel" name="CreateGoalTopLabel">
+              <property name="text">
+               <string>ACHIEVE YOUR BEST</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="CreateGoalBottomWidget" native="true">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <widget class="QLabel" name="CreateGoalsActivityLabel">
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QComboBox" name="CreateGoalActivityBox"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="CreateGoalsTypeLabel">
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QComboBox" name="CreateGoalsTypeBox"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="CreateGoalTargetLabel">
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLineEdit" name="CreateGoalTargetLE"/>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="GoalDeadlineLabel">
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLineEdit" name="GoalDeadlineLE"/>
+            </item>
+            <item row="8" column="0">
+             <widget class="QCheckBox" name="CreateGoalCheckbox">
+              <property name="text">
+               <string>Track With Previous Performances?</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="CreateGoalPlaceholderText">
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QPushButton" name="SaveGoalButton">
+              <property name="text">
+               <string>PushButton</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="LifetimeStatsPage">
+        <layout class="QVBoxLayout" name="verticalLayout_18">
+         <item>
+          <widget class="QWidget" name="LifetimeStatsDashboard" native="true">
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QLabel" name="MyLifetimeStatsLabel">
+              <property name="text">
+               <string>My Lifetime Stats</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="ExportStatsButton">
+              <property name="text">
+               <string>Export as CSV</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="NumberOfLifetimeWorkoutsLabel">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="LifetimeWorkoutsLabel">
+              <property name="text">
+               <string>Workouts</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="LifetimeStatsTableHeadings" native="true">
+           <layout class="QGridLayout" name="gridLayout_14">
+            <item row="0" column="0">
+             <widget class="QLabel" name="LSDate">
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="LSActivity">
+              <property name="text">
+               <string>Activity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="LSTitle">
+              <property name="text">
+               <string>Title</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableView" name="LifetimeStatsTable"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="ProfilePage">
+        <layout class="QGridLayout" name="gridLayout_28">
+         <item row="0" column="0">
+          <widget class="QWidget" name="ProfilePageTopWidget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <widget class="QLabel" name="ProfileInformationLabel">
+              <property name="text">
+               <string>Profile Information</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="ProfilePageMidWidget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QToolButton" name="ProfilePageImage">
+                 <property name="styleSheet">
+                  <string notr="true">QToolButton { border: none; }</string>
+                 </property>
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>50</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="ProfileInfoWidget" native="true">
+                 <layout class="QGridLayout" name="gridLayout_16">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="MemberSince">
+                    <property name="text">
+                     <string>Member Since</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="MemberSinceHolder">
+                    <property name="text">
+                     <string>TextLabel</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="AllTimeDistance">
+                    <property name="text">
+                     <string>All Time Distance</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="AllTimeDistanceHolder">
+                    <property name="text">
+                     <string>TextLabel</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QWidget" name="ProfilePageWidget1" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_20">
+            <item>
+             <widget class="QWidget" name="ProfilePageWidget2" native="true">
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QWidget" name="ProfileEditNameWidget" native="true">
+                 <layout class="QGridLayout" name="gridLayout_19">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="FirstNameLabel">
+                    <property name="text">
+                     <string>First Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="LastNameLE"/>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="FirstNameLE"/>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="LastNameLabel">
+                    <property name="text">
+                     <string>Last Name </string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="BirthdateWidget" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <item>
+                   <widget class="QLabel" name="BirthdateLabel">
+                    <property name="text">
+                     <string>Birthdate</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="BirthdateLE"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QWidget" name="WeightHeightWidget" native="true">
+                 <layout class="QGridLayout" name="gridLayout_17">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="WeightLabel">
+                    <property name="text">
+                     <string>Weight</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="HeightLE"/>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="WeightLE"/>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="HeightLabel">
+                    <property name="text">
+                     <string>Height</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QWidget" name="GenderWidget" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_23">
+                  <item>
+                   <widget class="QLabel" name="GenderLabel">
+                    <property name="text">
+                     <string>Gender</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="GenderComboBox"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="2">
+                <widget class="QWidget" name="LocationWidget" native="true">
+                 <layout class="QGridLayout" name="gridLayout_18">
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="CityLE">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="StateLabel">
+                    <property name="text">
+                     <string>State</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="StateLE">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="CountryLabel">
+                    <property name="text">
+                     <string>Location</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QComboBox" name="LocationComboBox"/>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="CityLabel">
+                    <property name="text">
+                     <string>City</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="SaveProfileButton">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="ProfileSetupPage">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QWidget" name="widget_60" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_36">
+            <item>
+             <widget class="QLabel" name="label_79">
+              <property name="text">
+               <string>Tell Us More About Yourself</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_61" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <widget class="QWidget" name="ProfileSetupWidget2" native="true">
+                 <layout class="QGridLayout" name="gridLayout_34">
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="ProfileSetupNameWidget" native="true">
+                    <layout class="QGridLayout" name="gridLayout_30">
+                     <item row="2" column="0">
+                      <widget class="QLineEdit" name="ProfileSetupFirstNameLE"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="ProfileSetupFirstName">
+                       <property name="text">
+                        <string>First Name</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QLineEdit" name="ProfileSetupLastNameLE"/>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLabel" name="ProfileSetupLastName">
+                       <property name="text">
+                        <string>Last Name </string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QToolButton" name="ProfileSetupIcon">
+                       <property name="styleSheet">
+                        <string notr="true">QToolButton { border: none; }</string>
+                       </property>
+                       <property name="text">
+                        <string>...</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QWidget" name="PSBirthdateWidget" native="true">
+                    <layout class="QVBoxLayout" name="verticalLayout_33">
+                     <item>
+                      <widget class="QLabel" name="PSBirthdateLabel">
+                       <property name="text">
+                        <string>Birthdate</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="PSBirthdateLE"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QWidget" name="PSWeightHeightWidget" native="true">
+                    <layout class="QGridLayout" name="gridLayout_31">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="PSWeightLabel">
+                       <property name="text">
+                        <string>Weight</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="PSHeightLE"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLineEdit" name="PSWeightLE"/>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLabel" name="PSHeightLabel">
+                       <property name="text">
+                        <string>Height</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QWidget" name="PSGenderWidget" native="true">
+                    <layout class="QVBoxLayout" name="verticalLayout_34">
+                     <item>
+                      <widget class="QLabel" name="PSGenderLabel">
+                       <property name="text">
+                        <string>Gender</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="PSGenderBox"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" colspan="2">
+                   <widget class="QWidget" name="PSLocationWidget" native="true">
+                    <layout class="QGridLayout" name="gridLayout_32">
+                     <item row="1" column="0">
+                      <widget class="QLineEdit" name="PSCityLE">
+                       <property name="maximumSize">
+                        <size>
+                         <width>200</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLabel" name="PSStateLabel">
+                       <property name="text">
+                        <string>State</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="PSStateLE">
+                       <property name="maximumSize">
+                        <size>
+                         <width>200</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="2">
+                      <widget class="QLabel" name="PSCountyLabel">
+                       <property name="text">
+                        <string>Location</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="2">
+                      <widget class="QComboBox" name="PSCountryBox"/>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="PSCityLabel">
+                       <property name="text">
+                        <string>City</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QPushButton" name="PSSaveButton">
+                       <property name="text">
+                        <string>PushButton</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="ProfileSetupWidget1" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_32"/>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="AccountPage">
+        <layout class="QVBoxLayout" name="verticalLayout_26">
+         <item>
+          <widget class="QWidget" name="AccountHeaderWidget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_21">
+            <item>
+             <widget class="QLabel" name="AccountHeaderLabel">
+              <property name="text">
+               <string>Account</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="AccountEmailWidget" native="true">
+           <layout class="QFormLayout" name="formLayout_2">
+            <item row="0" column="0">
+             <widget class="QWidget" name="AccountEmailInnterWidget" native="true">
+              <layout class="QGridLayout" name="gridLayout_20">
+               <item row="0" column="0">
+                <widget class="QLabel" name="APEmailLabel">
+                 <property name="text">
+                  <string>Email</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="APEmailLE"/>
+               </item>
+               <item row="1" column="1">
+                <widget class="QPushButton" name="APEmailSaveButton">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="APPasswordReset">
+                 <property name="text">
+                  <string>Request Password Reset</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QWidget" name="APEmptyWidgetRight" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout_27"/>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="DeleteAccountWidget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_25">
+            <item>
+             <widget class="QLabel" name="DeleteAccountLabel">
+              <property name="text">
+               <string>Delete Account</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="DeleteAccountLongLabel">
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Deleting your account is instant and permanent. You will not be able to regain access to your account or your fitness data. Please make sure you are ready to permanently delete before proceeding.</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="DeleteAccountClickableLabel">
+              <property name="text">
+               <string>Delete Account</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="APEmptyWidgetBottom" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="EditWorkoutPage">
+        <layout class="QVBoxLayout" name="verticalLayout_29">
+         <item>
+          <widget class="QWidget" name="EditWorkoutDashWidget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_28">
+            <item>
+             <widget class="QWidget" name="EditWorkoutDashWidget2" native="true">
+              <layout class="QFormLayout" name="formLayout_3">
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="EditWorkoutNameLE">
+                 <property name="maximumSize">
+                  <size>
+                   <width>400</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>MM/DD/YYYY</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QWidget" name="EditWorkoutDateTimeWidget" native="true">
+                 <layout class="QGridLayout" name="gridLayout_27">
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="EditWorkoutDateLE">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>MM/DD/YYYY</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="EditWorkoutDateLabel">
+                    <property name="styleSheet">
+                     <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Date</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="EditWorkoutTimeLabel">
+                    <property name="styleSheet">
+                     <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Start Time</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="EditWorkoutTimeLE">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-top: 2px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>HH:MM AM/PM</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QWidget" name="EditWorkoutActivityWidget" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_30">
+                  <item>
+                   <widget class="QLabel" name="EditWorkoutActivityLabel">
+                    <property name="text">
+                     <string>&lt;font color=&quot;white&quot;&gt;Activity &lt;font color=&quot;red&quot;&gt;*&lt;/font&gt;
+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="EditWorkoutActivityBox">
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Training</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Race</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Gym</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="EditWorkoutNameLabel">
+                 <property name="styleSheet">
+                  <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Workout Name</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="EditWorkoutstackedWidget">
+           <property name="currentIndex">
+            <number>3</number>
+           </property>
+           <widget class="QWidget" name="EditWorkoutEmptyPage">
+            <layout class="QHBoxLayout" name="horizontalLayout_12"/>
+           </widget>
+           <widget class="QWidget" name="EditWorkoutRacePage">
+            <layout class="QGridLayout" name="gridLayout_21">
+             <item row="1" column="0">
+              <widget class="QWidget" name="EditWorkoutAddWidget" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <widget class="QPushButton" name="EditWorkoutRaceAddButton">
+                  <property name="text">
+                   <string>Add another run</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="EditWorkoutRaceSaveButton">
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="EditWorkoutRacePageScrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="EditWorkoutRacescrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>158</width>
+                  <height>72</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_31">
+                 <item>
+                  <widget class="QWidget" name="EditWorkoutRaceInnerWidget" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_22">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="EditWorkoutRaceDistanceLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Distance</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="EditWorkoutRaceTimeLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Time</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="EditWorkoutRaceDistanceLe"/>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="EditWorkoutRaceTimeLE"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="EditWorkoutTrainingPage">
+            <layout class="QGridLayout" name="gridLayout_23">
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="EditWorkoutTrainingScrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="EditWorkoutTrainingScrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>263</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QWidget" name="EditWorkoutsTrainingInnerWidget" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_24">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="EWTRuns">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Run(s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="EWTTime">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Time(s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="EWTIntensity">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Intensity</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="3">
+                     <widget class="QLabel" name="EWTRest">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Rest</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="4">
+                     <widget class="QLabel" name="EWTFocus">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Focus</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="EWTRunsLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="placeholderText">
+                       <string>6x100m</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="EWTTimeLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="EWTIntensityLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>70%</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QLineEdit" name="EWTRestLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>70%</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="4">
+                     <widget class="QLineEdit" name="EWTFocusLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>e.g. Tempo</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QWidget" name="EWTButtonsWidget" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <item>
+                 <widget class="QPushButton" name="EWTAddRunButton">
+                  <property name="text">
+                   <string>Add another run</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="EWTSaveButton">
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="EWGymPage">
+            <layout class="QGridLayout" name="gridLayout_25">
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="EWGymscrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="EWGymscrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>782</width>
+                  <height>195</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QWidget" name="EWGymWidget" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_26">
+                    <item row="0" column="3">
+                     <widget class="QLabel" name="EWGymReps">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Reps</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3">
+                     <widget class="QLineEdit" name="EWGymRepsLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>12</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="EWGymExercise">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Exercise</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="EWGymExerciseLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+
+    padding-right: 20px; /* Adjust padding so text does not overlap the icon */
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Bench Press</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="EWGymWeightLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>135lbs/60kg</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="EWGymWeight">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Weight</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="EWGymSets">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: white; 
+border: none;
+background: transparent;
+text-align: left; /* Align the text inside the QPushButton to the left */
+padding-left: 0px;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Enter Sets</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLineEdit" name="EWGymSetsLE">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(105, 118, 132, 255);
+    border-right: 1px solid rgba(105, 118, 132, 255);
+    border-left: 1px solid rgba(105, 118, 132, 255);
+    border-bottom: 2px solid rgba(105, 118, 132, 255);
+    color: rgba(255, 255, 255, 230);
+    padding-left: 2px;
+    border-radius: 3px; /* Adjust this value to change the roundness */
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>3</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QWidget" name="EWGymButtonWidget" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <widget class="QPushButton" name="EWGymAddExerciseButton">
+                  <property name="text">
+                   <string>Add Exercise</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="EWGymSaveButton">
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
